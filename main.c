@@ -24,8 +24,8 @@ int main(void)
         }
         else if ( e == &ToggleLED2.e )
         {
-            bool state = get_boardLED_LED2();
-            PRINT("button BUTTON1 clicked, toogle LED2 %? -> %?");
+            bool on = isOn_boardLED_LED2();
+            PRINT("button BUTTON1 clicked, toggle LED2 %? -> %?", $s(on?"on":"off"), $s(on?"off":"on"));
             toggle_boardLED_LED2();
         }
     }
