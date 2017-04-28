@@ -23,9 +23,13 @@ int main(void)
             toggle_boardLED_LED1();
         }
         else if ( e == &ToggleLED2.e )
-        {
-            bool on = isOn_boardLED_LED2();
-            PRINT("button BUTTON1 clicked, toggle LED2 %? -> %?", $s(on?"on":"off"), $s(on?"off":"on"));
+        {            
+            #if PRINT_IS_ENABLED
+                bool on = isOn_boardLED_LED2();
+                PRINT("button BUTTON1 clicked, toggle LED2 %? -> %?",
+                      $s(on?"on":"off"),
+                      $s(on?"off":"on"));
+            #endif
             toggle_boardLED_LED2();
         }
     }
