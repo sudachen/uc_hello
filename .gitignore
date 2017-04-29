@@ -1,0 +1,8 @@
+~*
+.*
+/*.config
+/*.creator
+/*.files
+/*.includes
+/*.creator.*
+*.autosave
