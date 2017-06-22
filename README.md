@@ -3,7 +3,7 @@
 uCcm using examples.
 
 
-Use uccm to play with examples with following command:
+Use uccm to play with examples by following command:
 ```
 uccm -b boardname -y --reconfig --edit example_name.c
 ```
